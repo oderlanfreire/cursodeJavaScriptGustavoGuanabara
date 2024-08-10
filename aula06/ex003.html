@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiro Programa JS com edição de Markdown e Folha de Estilo</title>
+    <style>
+        /*esse é um exemplo de comentario para css, mas
+        tamém pode ser utilizado no js*/
+        body{
+            background-color: rgb(82, 203, 203);
+            color: white;
+            font: normal 20px Arial;
+        }
+        h1{
+            color: chocolate;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Olá Mundo</h1> <!-- Isso é um exemplo de comentario html -->
+    <p>primeiro html com teste de css basico e js</p>
+    <script>
+      /*
+      pode se usar apenas number onde o
+      proprio javascript vai decidir o tipo de 
+      dado numérico ou pode se usar passando a 
+      tipagem:
+      ParseInt para inteiro e
+      ParseFloat para numero real
+      */
+      let n1 = Number(window.prompt('Digite um número'))
+      let n2 = Number(window.prompt('Digite outro número'))
+      let soma = n1 + n2
+      //A conversão para string usada aqui é apenas um exemplo
+      //Não é necessario nesse caso.
+      window.alert(`A soma dos valores é ${String(soma)}`)
+    </script>
+  </body>
+</html>
