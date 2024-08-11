@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos DOM</title>
+    <style>
+      div#area {
+        font: normal 20pt Arial;
+        font-feature-settings: "grek";
+        background: rgb(156, 230, 4);
+        color: black;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="area">
+        brat
+    </div>
+
+    <script>
+        let brt = document.getElementById("area")
+        brt.addEventListener("click", clicar)
+        brt.addEventListener("mouseenter", entrar)
+        brt.addEventListener("mouseout", sair)
+        function clicar(){
+            brt.innerText = 'von dutch'
+        }
+
+        function entrar(){
+            brt.innerText = '360'
+        }
+
+        function sair(){
+            brt.innerText = '365'
+        }
+    </script>
+  </body>
+</html>
